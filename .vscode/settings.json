@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.yaml.example": "yaml",
+    },
+    "python.analysis.typeCheckingMode": "basic",
+}

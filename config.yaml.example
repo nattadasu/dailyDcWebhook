@@ -1,0 +1,64 @@
+# API Keys and other sensitive information required for the bot to function
+keys:
+  # HoYoLAB cookie token, used for daily check-in automatically
+  # for bot owner, will be applied to all games
+  hoyoverse:
+    ltuid: ""
+    ltoken: ""
+
+  # The Cat API, used for daily cat images
+  # Signup at https://thecatapi.com/ to get your own API key
+  thecatapi:
+    apikey: ""
+
+# Hoyoverse game server reset notification
+hoyoverse_server_reset:
+  # Webhook URL for the server reset notification
+  webhook: ""
+
+  # The time of the server reset, in UTC
+  roles:
+    eu: # UTC+1
+      gi: ""
+      hi3: ""
+      hsr: ""
+
+    na: # UTC-5
+      gi: ""
+      hi3: ""
+      hsr: ""
+
+    sea: # UTC+8
+      gi: ""
+      hi3: ""
+      hsr: ""
+
+    global: # UTC+9
+      tot: ""
+
+    tw: # UTC+8
+      gi: ""
+      hi3: ""
+      hsr: ""
+      tot: ""
+
+hoyoverse_daily_checkin:
+  webhook:
+    # if global is not set, use webhook uri for each game
+    _global: ""
+    gi: ""
+    hi3: ""
+    hsr: ""
+    tot: ""
+  roles:
+    gi: ""
+    hi3: ""
+    hsr: ""
+    tot: ""
+
+# Daily images webhook URLs
+daily_images:
+  webhooks:
+    cats: ""
+    nekomimi_boy: ""
+    nekomimi_girl: ""
