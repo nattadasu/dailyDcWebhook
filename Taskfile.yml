@@ -1,0 +1,12 @@
+version: '3'
+tasks:
+  run:
+    cmds:
+      - source venv/bin/activate
+      - cmd: python main.py --checkin > ./checkin.log 2>&1
+        ignore_error: True
+      - cmd: python main.py --daily > ./checkin.log 2>&1
+        ignore_error: True
+    preconditions:
+      - sh: test -f config.yaml
+        msg: Please set your secrets on config.yaml!
